@@ -26,8 +26,8 @@ body{
     margin: auto;
     width: 70vw;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    /* flex-direction: column; */
+    justify-content: space-between;
     align-items: center;
 }
 #stopwatch-display{
