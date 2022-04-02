@@ -1,0 +1,77 @@
+/* variable for custom defined colors */
+:root{
+    --musteredYello: #f0d26f;
+}
+/* custom stopwatch style font */
+@font-face {
+    font-family: 'digital-7';
+    src: url('fonts/digital-7.ttf');
+  }
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'digital-7', sans-serif;
+}
+.heading{
+    font-size: 130px;
+    font-weight: 500;
+    text-align: center;
+}
+#stopwatch{
+    border: var(--musteredYello) 5px solid;
+    border-radius: 10px;
+    padding: 50px;
+    margin: auto;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#stopwatch-display{
+    font-size: 90px;
+    display: flex;
+    justify-content: left;
+}
+#stopwatch-display div{
+    margin: 10px;
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+}
+#buttons button{
+    margin: 10px;
+    padding: 5px 30px;
+    border-radius: 5px;
+    background-color: var(--musteredYello);
+    font-size: 1rem;
+}
+
+
+/* for analog clock */
+
+#container{
+    width: 220px;
+    height: 220px;
+    margin: 20px auto;
+}
+#clock-ring{
+    border: var(--musteredYello) 5px solid;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.hand{
+    background-color: white;
+    width: 110px;
+    height: 5px;
+    border-radius: 10px;
+    transform-origin: 100%;
+    position: absolute;
+    transition: all 0.07s;
+}
