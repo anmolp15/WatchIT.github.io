@@ -129,7 +129,6 @@ function setDate() {
     var hourDeg = hr*30 + 90;
     hourHand.style.transform = `rotate(${hourDeg}deg)`;
 
-    // console.log(hr +" "+ min +" "+ sec);
 }
 
 // the setDate function will be called every 1 second and time will be updated
